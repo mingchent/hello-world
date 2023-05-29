@@ -1,0 +1,13 @@
+.nav_logo{
+width: 200px;
+}
+
+.nav__navigation{
+    padding: 20px;
+    display: flex;
+    background: url("green_background.svg");
+    width: calc(100% - 40px);
+    height: 1440px;
+    background-repeat: no-repeat;
+}
+
