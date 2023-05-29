@@ -1,13 +1,145 @@
 .nav_logo{
 width: 200px;
+margin-top: 10px;
+margin-right: 20px;
 }
 
 .nav__navigation{
-    padding: 20px;
-    display: flex;
-    background: url("green_background.svg");
-    width: calc(100% - 40px);
-    height: 1440px;
+    padding: 40px;
+    background-color: #3B4E42;
+    background-image: url(Banner.svg);
+    border-radius: 0px 0px 100px 0px;
+    background-position: 50% 70%;
+    width: calc(100% - 80px);
+    height: 497px;
     background-repeat: no-repeat;
+    justify-content: flex-start;
+    font-family:"Iowan old style" ;
+
 }
 
+.nav_logoandsearch{
+    display: flex;
+    align-items: center;
+}
+
+.nav_btn{
+    margin-left: 250px;
+    margin-top: 20px;
+}
+
+.btn{
+    color: #FFE8C6;
+    padding-right: 20px;
+    text-decoration : none;
+}
+
+.nav_searchbar{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.nav_searchbar_bar {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid #3B4E42;
+    float: left;
+    width: 924px;
+    height: 30px;
+    background: #f1f1f1;
+    border-radius: 30px;
+    
+  }
+
+.nav_searchbar_button {
+    width: 60px;
+    height: 35px;
+    background: #3B4E42;
+    color: white;
+    font-size: 17px;
+    border: 1px solid #3B4E42;
+    position: absolute;
+    margin-right: 14px;
+    border-radius: 20px;
+    background-image: url(magnify.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+.btn_logo{
+    margin-left: 20px;
+
+}
+
+.aboutus{
+width: 100%;
+background-color: #FBF3E8;
+background-image: url(Exclude.svg);
+background-repeat: no-repeat;
+display: flex;
+}
+
+.aboutus_content{
+    width: 878px;
+    display: block;
+    text-align: center;
+    margin: auto;
+    color: #504B48;
+    font-weight: lighter;
+    margin-top: 45px;
+    margin-bottom: 50px;
+    
+}
+
+.home{
+    background-color: #FBF3E8;
+    font-family:"Iowan old style";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #504B48;
+
+}
+
+h1{
+    font-size: 22px; 
+    font-family: "Iowan Old Style";
+}
+
+.home_pic{
+    width: 100%;
+}
+
+.category{
+    background-color: #3B4E42;
+    height: 391px;;
+    margin-top: -200px;
+    position: absolute;
+    width: 99%;
+    border-radius: 100px 0px 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cats{
+    font-family: "Iowan Old style";
+    color: #FFE8C6;
+    text-decoration : none;
+    line-height: 40px;
+    font-weight: 300;
+    font-size: 30px;
+    padding-right: 20px;
+}
+
+.divider{
+    font-family: "Iowan Old style";
+    color: #FFE8C6;
+    padding-right: 20px;
+}
+
+.home_recommend{
+    margin-top: 240px;
+}
