@@ -8,3 +8,54 @@
     <link rel="stylesheet" href="style.css">
     <link rel="html" href="home.html">
 </head>
+
+<body>
+    <script src="aprilandoak.js"></script>
+<header>
+    <div class="home">
+        <div class="product_nav__navigation">
+         <div class="nav_logoandsearch">
+            <div class="nav_logo_pic">
+            <img class="nav_logo" 
+            src="pics/greenlogo.svg" class="logo"> 
+            </div>
+        <form class="nav_searchbar" action="action_page.php">
+            <input class="nav_searchbar_bar" type="text" >
+            <button class="nav_searchbar_button" type="submit"></button>
+        </form>
+        <div class="nav_acntandcart">
+            <a class="btn_logo" href="#"><img src="pics/greenaccount.svg" alt=""></a>
+            <a  class="btn_logo" href="#"><img src="pics/greencart.svg" alt=""></a>
+        </div>
+        </div>
+
+        <div>
+            <div class="nav_btn">
+               <a class="product_navbtn" href="#">Furniture</a>
+               <a  class="product_navbtn" href="#">Rugs</a>
+               <a class="product_navbtn"  href="#">Lighting</a>
+               <a class="product_navbtn" href="#">Homewares</a>
+               <a class="product_navbtn" href="#">Home Decor</a>
+           </div>
+           </div>
+</header>
+<main>
+    <div class="product_pic">
+    <div class="slideshow-container">
+        <div class="slide"><img src="pics/BX41.jpeg" style="width:100%"></div>
+        <div class="slide"><img src="pics/BX41_1.jpeg" style="width:100%"></div>
+        <div class="slide"><img src="pics/BX41_2.jpeg" style="width:100%"></div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        </div>
+     </div>
+     <div>
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+    </div>
+
+</main>
+
+</body>

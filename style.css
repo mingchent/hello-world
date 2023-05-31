@@ -46,7 +46,7 @@ margin-right: 20px;
 .nav_searchbar_bar {
     padding: 10px;
     font-size: 17px;
-    border: 1px solid #3B4E42;
+    border: transparent;
     float: left;
     width: 924px;
     height: 30px;
@@ -161,6 +161,9 @@ h1{
     border-color: transparent;
     margin-right: 10px;
     margin-bottom: 25px;
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
 
 }
 
@@ -179,6 +182,14 @@ h2, .price{
     background-color: #3B4E42;
     width: calc(100% - 80px);
     height: 400px;
+    padding: 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.product_nav__navigation{
+    background-color:#ffffff;
     padding: 40px;
     align-items: center;
     display: flex;
@@ -254,3 +265,55 @@ h2, .price{
     font-family: "Iowan Old Style";
     margin-right: 10px;
 }
+
+.product_navbtn{
+    color: #3B4E42;
+    padding-right: 20px;
+    text-decoration : none;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+ }
+
+ .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
