@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="html" href="home.html">
+    <script src="aprilandoak.js"></script>
+</head>
+
+<body>
+    <header>
+    <div class="product_nav__navigation">
+        <div class="nav_logoandsearch">
+           <div class="nav_logo_pic">
+           <a href="home.html">
+            <img class="nav_logo" src="pics/greenlogo.svg">
+           </a> 
+           </div>
+       <form class="nav_searchbar" action="action_page.php">
+           <input class="nav_searchbar_bar" type="text" >
+           <button class="nav_searchbar_button" type="submit"></button>
+       </form>
+       <div class="nav_acntandcart">
+           <a class="btn_logo" href="#"><img src="pics/greenaccount.svg" alt=""></a>
+           <div id="addtocart_icon">
+           <a  class="btn_logo" href="cart.html"><img src="pics/greencart.svg" alt=""></a>
+           <p id="printhere"></p>
+           </div>
+          
+       </div>
+       </div>
+    </header>
+    <main style="width: 900px;">
+        <h1>Shopping cart</h1>
+        <hr style="border-style: solid;">
+        <div id="product1">
+        <div class="cart_product">
+            <div class="cart_product_info" style="display: flex;">
+                <img src="pics/greysidetable.jpeg" alt="greysidetable" width="15%">
+                <div style="display: flex; flex-direction: column; margin-left: 20px;">
+                <h2 id="cart_productname">Harper Faux Side Table</h2>
+                <p id="cart_product_var" style="color: #9B9B9B;">Grey</p>
+                <p class="price">$320</p>
+                </div>
+            </div>
+            <div style="display: flex;flex-direction: column; align-items: flex-end;">
+                <div class="box">
+                    <a href="#popup-box">
+                        Delete
+                    </a>
+                </div>
+                <div id="popup-box" class="modal">
+                    <div class="content">
+                        <h1 style="color: #3b4e42">
+                            Delete this item?
+                        </h1>
+                        <div>
+                        <a href="#"
+                           class="box-close" onclick="deleteItem(0)">
+                            Yes
+                        </a>
+                        <a href="#"
+                           class="box-close">
+                            No
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            <div class="cart_product_qty">
+                <div class="cart_counter">
+                    <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                    <input class="quantity_input" id="quantity" type="text" value="1">
+                    <span class="up" onClick='increaseCount(event, this)'>+</span>
+                </div>
+            </div>
+            </div>
+        </div>
+        <hr>
+        </div>
+        <div id="product2">
+        <div class="cart_product">
+            <div class="cart_product_info" style="display: flex;">
+                <img src="pics/BX41.jpeg" alt="greysidetable" width="15%">
+                <div style="display: flex; flex-direction: column; margin-left: 20px;">
+                <h2 id="cart_productname">Wood and Stone Side Table</h2>
+                <p id="cart_product_var" style="color: #9B9B9B;">White</p>
+                <p class="price">$320</p>
+                </div>
+            </div>
+            <div style="display: flex;flex-direction: column; align-items: flex-end;">
+                <div class="box">
+                    <a href="#popup-box">
+                        Delete
+                    </a>
+                </div>
+                <div id="popup-box" class="modal">
+                    <div class="content">
+                        <h1 style="color: #3b4e42">
+                            Delete this item?
+                        </h1>
+                        <div>
+                        <a href="#"
+                           class="box-close" onclick="deleteItem(2)">
+                            Yes
+                        </a>
+                        <a href="#"
+                           class="box-close">
+                            No
+                        </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart_product_qty">
+                    <div class="cart_counter">
+                        <span class="down" onClick='decreaseCount(event, this)'>-</span>
+                        <input class="quantity_input" id="quantity" type="text" value="1">
+                        <span class="up" onClick='increaseCount(event, this)'>+</span>
+                    </div>
+                </div>
+                </div>
+        </div>
+        <hr>
+        </div>
+        <div id="discount" style="width: 900px;">
+        <input id="cart_enterdiscount" type="text" placeholder="Enter discount code" >
+           <button class="cart_discountbtn" type="submit">Apply</button>
+        </div>
+        <section id="cart_pricecount">
+            <div class="cart_shippingntax" style="width: 900px;">
+                <details><summary>Estimate shipping and tax</summary>
+                    <div id="details_content">
+                    <p id="shippingname">Standard Shipping</p> 
+                    <div class="shippingrate">
+                        <input type="radio" id="standardshipping" checked>
+                    <label for="standardshipping">Shipping rate $5</label>
+                    </div>
+                    </div>
+                </details>
+            </div>
+            <h2 class="cart_subtotal" style="display: flex; justify-content: space-between; "><p>Subtotal</p><p>$640</p></h2>
+            <h2 class="cart_total" style="display: flex; justify-content: space-between;"><p>Total</p><p>$645</p></h2>
+        </section>
+        <a href="checkout.html" style="width: 900px;"><button class="cart_checkoutbtn" type="submit">Proceed to Checkout </button></a>
+    </main>
+    </body>

@@ -7,10 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="html" href="home.html">
+    <script src="aprilandoak.js"></script>
 </head>
 
 <body>
-    <script src="aprilandoak.js"></script>
 <header>
     <div class="home">
         <div class="product_nav__navigation">
@@ -25,7 +25,11 @@
         </form>
         <div class="nav_acntandcart">
             <a class="btn_logo" href="#"><img src="pics/greenaccount.svg" alt=""></a>
-            <a  class="btn_logo" href="#"><img src="pics/greencart.svg" alt=""></a>
+            <div id="addtocart_icon">
+            <a  class="btn_logo" href="cart.html"><img src="pics/greencart.svg" alt=""></a>
+            <p id="printhere"></p>
+            </div>
+           
         </div>
         </div>
 
@@ -39,23 +43,129 @@
            </div>
            </div>
 </header>
-<main>
-    <div class="product_pic">
+<main class="product_main">
+    <div class="breadcrumb"><a href="home.html" class="product_breadcrumb_btn">Home > </a><a href="search.html" class="product_breadcrumb_btn">&nbsp;Furniture ></a><a href="#" class="product_breadcrumb_btn">&nbsp;sidetable</a></div>
+    <section class="product_info">
+        
+    <div class="product_picgal">
     <div class="slideshow-container">
-        <div class="slide"><img src="pics/BX41.jpeg" style="width:100%"></div>
-        <div class="slide"><img src="pics/BX41_1.jpeg" style="width:100%"></div>
-        <div class="slide"><img src="pics/BX41_2.jpeg" style="width:100%"></div>
+        <div class="slide"><img id="Image1" class="product_img1" src="pics/greysidetable.jpeg" style="width:100%"></div>
+        <div class="slide"><img id="Image2" class="product_img1" src="pics/greysidetable1.jpeg" style="width:100%"></div>
+        <div class="slide"><img id="Image3" class="product_img1" src="pics/greysidetable2.jpeg" style="width:100%"></div>
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
         </div>
-     </div>
+    
      <div>
         <span class="dot" onclick="currentSlide(1)"></span> 
         <span class="dot" onclick="currentSlide(2)"></span> 
         <span class="dot" onclick="currentSlide(3)"></span> 
       </div>
     </div>
-
+    <div class="product_dtl">
+        <h1 class="product_name">Wood And Stone Side Table</h1>
+        <p class="product_subtitle">A gorgeous side table.</p>
+        <h2 class="product_price">$579</h2>
+        <div class="shipping">
+        <img class="box_icon" src="pics/book-check.svg">
+        <p>In stock, ships in 7-14 days - running low</p>
+        </div>
+        <div class="product_color">
+        <p class="subtitle">Color</p>
+        <div>
+        <label>
+            <input type="radio" name="test" value="small" checked onclick="changeScr(1)">
+            <img src="pics/color_grey.svg" alt="Option 1">
+          </label>
+          
+          <label>
+            <input type="radio" name="test" value="big" onclick="changeScr(0)">
+            <img src="pics/color_brown.svg" alt="Option 2">
+          </label>
+        </div>
+        </div>
+        
+        <p class="subtitle">Quantity</p>
+        <div class="counter">
+            <span class="down" onClick='decreaseCount(event, this)'>-</span>
+            <input class="quantity_input" id="quantity" type="text" value="1">
+            <span class="up" onClick='increaseCount(event, this)'>+</span>
+        </div>
+        <img class="paymentmethods" src="pics/paymentmethods.svg">
+        <div class="checkout_btn">
+            <button class="addtocart" onclick="addToCart()"></button>
+            <button class="checkout">Instant Checkout</button>
+        </div>
+    </div>
+</section>
+<hr>
+<div class="product_description">
+    <div>
+    <details>
+        <summary >Description</summary>
+        Introducing the Harper Faux Concrete Side Table, the perfect addition to any modern living space. 
+        Crafted from high-quality materials, this side table features a stunning faux concrete finish that 
+        adds a touch of industrial chic to your decor. The sturdy metal frame ensures durability and stability, 
+        while the compact size makes it ideal for small spaces. Use it as a side table for your sofa or as a 
+        nightstand in your bedroom. With its sleek and stylish design, the Harper Faux Concrete Side Table is 
+        sure to impress your guests and elevate your home decor.
+    </details>
+    <details>
+        <summary>Additional info</summary>
+        Width 45 cm 
+        Height 56 cm
+        Length 45 cm
+        <br>
+        Color Concrete/Black Material MDF/Paper Veneer/Metal Legs
+    </details>
+    </div>
+    <img src="pics/guarantees.svg" style="margin: 10px 0px 0px 10px;">
+</div>
+<hr>
+<h1 style="text-align: center;">Similar Product</h1>
+    <div class="product_grid">
+        <a class="product_card" href="product.html">
+        <img src="pics/BX41.jpeg" alt="Stone Side Table" class="product_img" width="90%">
+        <h2>Stone Side Table</h2>
+        <p class="price">$579</p>
+        </a>
+        <a class="product_card">
+            <img src="pics/32684_1.jpeg" alt="Willow Natural Rattan" class="product_img" width="90%">
+            <h2>Willow Natural Rattan </h2>
+            <p class="price">$320</p>
+        </a>
+        <a class="product_card">
+            <img src="pics/berton-website-images-march-2021-65.jpeg" alt="Grey arm chair" class="product_img" width="90%">
+            <h2>Monet Accent Chair</h2>
+            <p class="price">$567</p>
+        </a>
+        <a class="product_card">
+            <img src="pics/mo12.png" alt="Wood Side Table" class="product_img" width="90%">
+            <h2>Wood Side Table</h2>
+            <p class="price">$300</p>
+        </a>
+        <a class="product_card">
+            <img src="pics/GF88_11.jpg" alt="Iron Side Table" class="product_img" width="90%">
+            <h2>Pedastal Marble Iron Side Table</h2>
+            <p class="price">$479</p>
+        </a>
+        <a class="product_card">
+            <img src="pics/diningchair.jpeg" alt="Dining Chair" class="product_img" width="90%">
+            <h2>Harlow Black Dining Chair</h2>
+            <p class="price">$674.10</p>
+            
+        </a>
+        <a class="product_card">
+            <img src="pics/whitearmchair.jpeg" alt="Hemming Occasional Chair " class="product_img" width="90%">
+            <h2>Hemming Occasional Chair </h2>
+            <p class="price">$1329.05</p>     
+        </a>
+        <a class="product_card">
+            <img src="pics/sidetable.jpeg" alt="Wood Side Table" class="product_img" width="90%">
+            <h2>Atlanta Wood Side Table</h2>
+            <p class="price">$149</p> 
+        </a>
+    </div>
 </main>
 
 </body>

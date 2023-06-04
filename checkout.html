@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="html" href="home.html">
+    <script src="aprilandoak.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="product_nav__navigation">
+            <div class="nav_logoandsearch">
+               <div class="nav_logo_pic">
+               <a href="home.html">
+                <img class="nav_logo" src="pics/greenlogo.svg">
+               </a> 
+               </div>
+           <form class="nav_searchbar" action="action_page.php">
+               <input class="nav_searchbar_bar" type="text" >
+               <button class="nav_searchbar_button" type="submit"></button>
+           </form>
+           <div class="nav_acntandcart">
+               <a class="btn_logo" href="#"><img src="pics/greenaccount.svg" alt=""></a>
+               <div id="addtocart_icon">
+               <a  class="btn_logo" href="cart.html"><img src="pics/greencart.svg" alt=""></a>
+               <p id="printhere"></p>
+               </div>
+              
+           </div>
+           </div>
+        </header>
+        <main style="width: 900px;">
+            <h1>- Checkout -</h1>
+            <section style="display: flex; font-family: Iowan Old Style;">
+            <div style="margin-right: 50px;">
+                <form style="display: flex; flex-direction: column;">
+                <h1 class="checkout_title">Personal Info</h1>
+                    <input class="Checkout_input" type="text" placeholder="Firstname">
+                    <input class="Checkout_input" type="text" placeholder="Lastname">
+                    <input class="Checkout_input" type="text" placeholder="Mobile Number">
+                    <input class="Checkout_input" type="text" placeholder="Email">
+                <h1 class="checkout_title">Address</h1>
+                    <input class="Checkout_input" type="text" placeholder="Address Line">
+                    <input class="Checkout_input" type="text" placeholder="City">
+                    <input class="Checkout_input" type="text" placeholder="State">
+                    <input class="Checkout_input" type="text" placeholder="Postcode">
+                    
+                
+            
+                </div>
+                <div style="width:330px">
+                    
+                        <form>
+                        <h2 class="checkout_title">Delivery</h2>
+                        <div style="display: flex; align-items: center; justify-content: space-between;">
+                        <div>
+                            <input type="radio" id="radiobtn" name="radiobtn1" checked>
+                        <label id="delivery_mthd" for="radiobtn">Standard</label>
+                        </div>
+                        <p>4-5 days</p>
+                        <p>$5</p>
+                        </div>
+                        <div style="display: flex; align-items: center; justify-content: space-between;">
+                        <div>
+                            <input type="radio" id="radiobtn" name="radiobtn1">
+                        <label id="delivery_mthd" for="radiobtn">Express</label>
+                        </div>
+                        <p>1-2 days</p>
+                        <p>$8</p>
+                        </div>
+                        </form>
+                    
+                    
+                            <h2 class="checkout_title">Payment</h2>
+                            <div style="display: flex; align-items: center; justify-content: space-between;">
+                            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; margin-top: 20px;">
+                                <input type="radio" id="radiobtn" name="radiobtn" checked>
+                            <label id="delivery_mthd_card" for="radiobtn">Credit/Debit card</label>
+                            <img src="pics/creditcardicon.svg" style="margin-left: 45px;">
+                            </div>
+                            
+                            </div>
+                            <div style="display: flex; align-items: center;">
+                            <div style="display: contents;">
+                                <input type="radio" id="radiobtn" name="radiobtn">
+                            <label id="delivery_mthd" for="radiobtn"><img src="pics/paypal.svg" width="100%" style="margin-top: 10px;"></label>
+                            </div>
+                            </div>
+                            <div style="display: flex; align-items: center;">
+                                <div style="display: contents;">
+                                    <input type="radio" id="radiobtn" name="radiobtn">
+                                <label id="delivery_mthd" for="radiobtn"><img src="pics/afterpay.svg" width="100%" style="margin-top: 10px;"></label>
+                                </div>
+                                </div>
+                            <div style="display: flex; align-items: center;">
+                                <div style="display: contents;">
+                                    <input type="radio" id="radiobtn" name="radiobtn">
+                                <label id="delivery_mthd" for="radiobtn"><img src="pics/zipay.svg" width="100%" style="margin-top: 10px;"></label>
+                                </div>
+                                </div>
+                            
+                 
+                    <hr>
+                    <div id="checkout_sum">
+                        <div>
+                            <h2 class="checkout_sub" style="display: flex; justify-content: space-between; "><p id="price">Subtotal</p><p>$645</p></h2>
+                        </div>
+                        <div>
+                            <h2 class="checkout_sub" style="display: flex; justify-content: space-between;"><p id="price">Delivery Fee</p><p>$0</p></h2>
+                        </div>
+                        <div>
+                            <h2 class="checkout_total" style="display: flex; justify-content: space-between;"><p id="price">Total</p><p>$645</p></h2>
+                        </div>
+                    </div>
+                    
+                    </div>
+                </form>
+                
+            </section>
+            <section style="margin-top: 50px; width:900px; display: flex; flex-direction: column; align-items: center;">
+            <a id="checkout_return" href="cart.html">Go back to shopping cart</a>
+                    <a href="checkout.html" style="width: 900px;"><button class="cart_checkoutbtn" type="submit">Proceed to Checkout </button></a>
+            </section>
+</body>
