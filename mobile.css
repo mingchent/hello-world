@@ -10,7 +10,7 @@
     }
 
     .nav__navigation{
-        padding: 60px 20px 40px 20px;
+        padding: 80px 20px 40px 20px;
         width: calc(100% - 40px);
         background-image: url(pics/Banner_mobile.svg);
         background-size: 80%;
@@ -20,13 +20,15 @@
     }
 
     .nav_logoandsearch{
-        width: 100%;
+        width: 90vw;
         justify-content: space-between;
     }
 
     .nav_searchbar_button{
-        width: 10%;
-    }
+        
+        position: relative;
+         margin-right: 14px;
+    } 
 
     .nav_btn{
         display: none;
@@ -44,6 +46,7 @@
         flex-wrap: wrap;
         height: 280px;
         align-content: center;
+        border-radius: 80px 0px 0px 80px;
     }
 
     .home_pic{
@@ -84,5 +87,201 @@
         font-size: 14px;
     }
 
+    .search_cats_intro{
+        width: 100%;
+    }
 
+    .search_introtxt{
+        font-size: 14px;
+    }
+
+    .search_productlist{
+        border-radius: 60px 60px 0px 0px;
+        margin-top: -100px;
+    }
+
+    .search_subcatsbtn{
+        padding: 4px 8px 4px 8px;
+    }
+
+    .search_subcats{
+        margin-top: 30px;
+    }
+
+    .product_card{
+        flex: 1 40%;
+        margin-right: 0;
+    }
+
+    .search_nav__navigation, .product_nav__navigation{
+        padding: 80px 40px 40px 40px;
+    }
+
+    .product_info{
+        display: block;
+    }
+
+    .product_main{
+        width: 100%;
+    }
+
+    .breadcrumb{
+        display: none;
+    }
+
+    .product_picgal{
+        margin-right: 0;
+    }
+
+    .prev, .next{
+        color: black;
+    }
+
+    .prev:hover, .next:hover{
+        background-color: transparent;
+    }
+
+    .addtocart{
+        height: 50px;
+    }
+
+    .checkout{
+        height: 50px;
+        width: 26vh;
+    }
+
+    .product_subdescription{
+        width: 100%;
+        margin-left: 40px;
+    }
+
+    .product_description{
+        display: block;
+    }
+
+    details{
+        width: 80%;
+        line-height: 1.5;
+    }
+
+    .guarantees_pic{
+        margin-left: 40px;
+        margin-top: 20px;
+    }
+
+    #cart_main{
+        width: 100%;
+    }
+
+    .cart_greytabnle{
+        object-fit: scale-down;
+        width: 7vh;
+    }
+
+    .cart_midsec{
+        width: 40vw;
+    }
+
+    .cart_discountbtn{
+        width: 20vw;
+    }
+
+    #cart_enterdiscount{
+        margin-right: 10px;
+        width: 80%;
+    }
+
+    #discount{
+        width: 80vw;
+    }
+
+    .cart_shippingntax{
+        width: 80vw;
+    }
+
+    #details_content{
+        width: 60vw;
+    }
+
+    .cart_checkoutbtn{
+        width: 90vw;
+    }
+
+    .cart_checkoutbtn1{
+        width: 90vw;
+    }
+
+    #checkout_main{
+        width: 90vw;
+        display: block;
+    }
+
+    #checkout_pagetitle{
+        text-align: center;
+    }
+
+    #checkout_formleft{
+        display: block; 
+        
+    }
+
+    #checkout_form{
+        display: block;
+        margin-left: 10px;
+    }
+
+    #checkout_bottom,  #ptc_btn{
+        width:90vw; 
+    }
+
+    .Checkout_input{
+        width: 85vw;
+    }
+
+    .confirm_nav__navigation{
+        background-position: 50% 70%;
+        height: 40vh;
+        background-image:url(pics/mobile_confirmation_bg.svg);
+    }
+
+    
+    .confirm_searchbar_button,.checkout_searchbar_button, .cart_searchbar_button{
+        display: none;
+    }
+
+    .confirm_main{
+        border-radius: 60px 60px 0px 0px;
+    }
+
+    #confirm_contentdiv{
+        width: 90vw;
+    }
+
+    .confirm_returnbtn{
+        width: 90vw;
+    }
+
+    .confirm_acntandcart{
+        display: none;
+    }
+
+    .mid_logo{
+        width: 40vw;
+        margin-top: 5px;
+        margin-left: 25vw;
+    }
+
+    .confirm_logo{
+        width: 40vw;
+        margin-top: 5px;
+    }
+
+    .mid_searchbar_button{
+        display: none;
+    }
+
+    #checkout_formright{
+        width:90%;
+    }
 }
+

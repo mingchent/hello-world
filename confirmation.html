@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width:450px)">
     <link rel="html" href="home.html">
     <script src="aprilandoak.js"></script>
 </head>
@@ -15,23 +16,16 @@
         
         <div class="confirm_nav__navigation">
             <div class="nav_logo_pic">
-            <img class="nav_logo" 
-            src="pics/logo.png" class="logo"> 
+            <a href="home.html"><img class="confirm_logo" 
+            src="pics/logo.png" class="logo"> </a>
             </div>
-        <form class="nav_searchbar" action="action_page.php">
-            <input class="nav_searchbar_bar" type="text" >
-            <button class="nav_searchbar_button" type="submit"></button>
-        </form>
-        <div class="nav_acntandcart" style="margin-top: 10px;">
-            <a class="btn_logo" href="#"><img src="pics/account.svg" alt=""></a>
-            <a  class="btn_logo" href="#"><img src="pics/cart.svg" alt=""></a>
-        </div>
+        
         </div>
        
         
         </header>
         <main class="confirm_main" >
-            <div style="width: 900px;">
+            <div id="confirm_contentdiv">
             <p id="confirm_text">Thanks for ordering at April and Oak, this is a confirmation message that you 
                 have<br> successfully placed an order. We hope you enjoy the products and the experience. </p>
             <div style="margin-top: 60px; display: flex;flex-direction: column;align-items: center;">

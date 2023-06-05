@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width:450px)">
     <link rel="html" href="home.html">
     <script src="aprilandoak.js"></script>
 </head>
@@ -19,7 +20,7 @@
             <img class="nav_logo" 
             src="pics/greenlogo.svg" class="logo"> 
             </div>
-        <form class="nav_searchbar" action="action_page.php">
+        <form class="nav_searchbar" action="#">
             <input class="nav_searchbar_bar" type="text" >
             <button class="nav_searchbar_button" type="submit"></button>
         </form>
@@ -35,11 +36,11 @@
 
         <div>
             <div class="nav_btn">
-               <a class="product_navbtn" href="#">Furniture</a>
-               <a  class="product_navbtn" href="#">Rugs</a>
-               <a class="product_navbtn"  href="#">Lighting</a>
-               <a class="product_navbtn" href="#">Homewares</a>
-               <a class="product_navbtn" href="#">Home Decor</a>
+               <a class="product_navbtn" href="search.html">Furniture</a>
+               <a  class="product_navbtn" href="search.html">Rugs</a>
+               <a class="product_navbtn"  href="search.html">Lighting</a>
+               <a class="product_navbtn" href="search.html">Homewares</a>
+               <a class="product_navbtn" href="search.html">Home Decor</a>
            </div>
            </div>
 </header>
@@ -100,7 +101,8 @@
 </section>
 <hr>
 <div class="product_description">
-    <div style="width: 600px;">
+    <div class="product_subdescription">
+    
     <details>
         <summary >Description</summary>
         Introducing the Harper Faux Concrete Side Table, the perfect addition to any modern living space. 
@@ -119,7 +121,7 @@
         Color Concrete/Black Material MDF/Paper Veneer/Metal Legs
     </details>
     </div>
-    <img src="pics/guarantees.svg" style="margin-left:10px;">
+    <img src="pics/guarantees.svg" class="guarantees_pic" >
 </div>
 <hr>
 <h1 style="margin-left: auto; margin-right: auto;">Similar Product</h1>

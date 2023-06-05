@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width:450px)">
     <link rel="html" href="home.html">
     <script src="aprilandoak.js"></script>
 </head>
@@ -16,13 +17,13 @@
         <div class="nav_logoandsearch">
            <div class="nav_logo_pic">
            <a href="home.html">
-            <img class="nav_logo" src="pics/greenlogo.svg">
+            <img class="mid_logo" src="pics/greenlogo.svg">
            </a> 
            </div>
-       <form class="nav_searchbar" action="action_page.php">
-           <input class="nav_searchbar_bar" type="text" >
-           <button class="nav_searchbar_button" type="submit"></button>
-       </form>
+        <form class="nav_searchbar" action="#">
+            <input class="nav_searchbar_bar" type="text" >
+            <button class="mid_searchbar_button" type="submit"></button>
+        </form>
        <div class="nav_acntandcart">
            <a class="btn_logo" href="#"><img src="pics/greenaccount.svg" alt=""></a>
            <div id="addtocart_icon">
@@ -33,14 +34,14 @@
        </div>
        </div>
     </header>
-    <main style="width: 900px;">
+    <main id="cart_main">
         <h1>Shopping cart</h1>
         <hr style="border-style: solid;">
         <div id="product1">
         <div class="cart_product">
             <div class="cart_product_info" style="display: flex;">
-                <img src="pics/greysidetable.jpeg" alt="greysidetable" width="15%">
-                <div style="display: flex; flex-direction: column; margin-left: 20px;">
+                <img src="pics/greysidetable.jpeg" alt="greysidetable" class="cart_greytabnle">
+                <div class="cart_midsec" style="display: flex; flex-direction: column; margin-left: 20px;">
                 <h2 id="cart_productname">Harper Faux Side Table</h2>
                 <p id="cart_product_var" style="color: #9B9B9B;">Grey</p>
                 <p class="price">$320</p>
@@ -83,8 +84,8 @@
         <div id="product2">
         <div class="cart_product">
             <div class="cart_product_info" style="display: flex;">
-                <img src="pics/BX41.jpeg" alt="greysidetable" width="15%">
-                <div style="display: flex; flex-direction: column; margin-left: 20px;">
+                <img src="pics/BX41.jpeg" alt="greysidetable" class="cart_greytabnle">
+                <div class="cart_midsec" style="display: flex; flex-direction: column; margin-left: 20px;">
                 <h2 id="cart_productname">Wood and Stone Side Table</h2>
                 <p id="cart_product_var" style="color: #9B9B9B;">White</p>
                 <p class="price">$320</p>
@@ -125,12 +126,12 @@
         </div>
         <hr>
         </div>
-        <div id="discount" style="width: 900px;">
+        <div id="discount">
         <input id="cart_enterdiscount" type="text" placeholder="Enter discount code" >
            <button class="cart_discountbtn" type="submit">Apply</button>
         </div>
         <section id="cart_pricecount">
-            <div class="cart_shippingntax" style="width: 900px;">
+            <div class="cart_shippingntax">
                 <details><summary>Estimate shipping and tax</summary>
                     <div id="details_content">
                     <p id="shippingname">Standard Shipping</p> 
@@ -144,6 +145,6 @@
             <h2 class="cart_subtotal" style="display: flex; justify-content: space-between; "><p>Subtotal</p><p>$640</p></h2>
             <h2 class="cart_total" style="display: flex; justify-content: space-between;"><p>Total</p><p>$645</p></h2>
         </section>
-        <a href="checkout.html" style="width: 900px;"><button class="cart_checkoutbtn" type="submit">Proceed to Checkout </button></a>
+        <a href="checkout.html" class="cart_checkoutbtn1"><button class="cart_checkoutbtn" type="submit">Proceed to Checkout </button></a>
     </main>
     </body>

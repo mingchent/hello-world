@@ -265,6 +265,7 @@ h2, .price{
     padding: 5px 10px 5px 10px;
     font-family: "Iowan Old Style";
     margin-right: 10px;
+    cursor: pointer;
 }
 
 .product_navbtn{
@@ -591,6 +592,7 @@ main{
 #discount{
     display: flex;
     justify-content: space-between;
+    width: 900px;
 }
 
 .cart_shippingntax{
@@ -599,6 +601,7 @@ main{
     font-family: "Iowan Old Style";
     justify-content: space-between;
     margin-top: 20px;
+    width: 900px;
 }
 
 #standardshipping{
@@ -840,6 +843,7 @@ body{
 #content_copy{
     border: none;
     background-color: transparent;
+    cursor: pointer;
 }
 
 .confirm_returnbtn{
@@ -852,5 +856,78 @@ body{
     font-family: "Iowan Old Style";
     color: white;
     font-size: 17px;
+    cursor: pointer;
 }
 
+.product_subdescription{
+    width: 600px;
+}
+
+.guarantees_pic{
+    margin-left:10px;
+}
+
+#cart_main{
+    width: 900px;
+}
+
+.cart_greytabnle{
+    width:15%;
+}
+
+.cart_checkoutbtn1{
+    width: 900px;
+}
+
+#checkout_main{
+    width: 900px;
+}
+
+#checkout_form{
+    display: flex; 
+    font-family: Iowan Old Style;
+}
+
+#checkout_bottom{
+    margin-top: 50px; 
+    width:900px; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+#ptc_btn{
+    width: 900px;
+}
+
+#confirm_contentdiv{
+    width: 900px;
+}
+
+#checkout_formright{
+    width:330px;
+}
+
+.mid_searchbar_button, .checkout_searchbar_button{
+    width: 60px;
+    height: 35px;
+    background: #3B4E42;
+    color: white;
+    font-size: 17px;
+    border: 1px solid #3B4E42;
+    position: absolute;
+    margin-right: 14px;
+    border-radius: 20px;
+    background-image: url(pics/magnify.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.mid_logo, .confirm_logo{
+    width: 200px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+#checkout_form_left{
+    width: 600px;
+}
