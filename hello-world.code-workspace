@@ -1,10 +1,7 @@
 {
-	"folders": [
-		{
-			"path": "../../../Library/Mobile Documents/com~apple~CloudDocs/Desktop/macbook icloud/hello-world"
-		}
-	],
-	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "Desktop"
-	}
+    "folders": [
+        {
+            "path": "."
+        }
+    ]
 }

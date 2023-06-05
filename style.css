@@ -432,6 +432,7 @@ h2, .price{
 
 .paymentmethods{
     margin-top: 20px;
+    width: 20vw;
 }
 
 .addtocart{
@@ -576,6 +577,8 @@ main{
     border-width: 1px;
     border-style: solid;
     padding-left: 20px;
+    font-family: "Iowan Old Style";
+    font-size: 14px;
 }
 
 .cart_discountbtn{
@@ -586,7 +589,10 @@ main{
     background-color: #3B4E42;
     font-family: "Iowan Old Style";
     color: white;
-    padding: 6px 1px 8px 1px;
+    padding: 8px 1px 8px 1px;
+    font-size: 13px;
+    
+    
 }
 
 #discount{
@@ -649,6 +655,7 @@ main{
     font-family: "Iowan Old Style";
     color: white;
     font-size: 17px;
+    cursor: pointer;
 }
 
 #cart_deletebtn{
@@ -759,6 +766,8 @@ p {
     font-family: "Iowan Old Style";
     font-size: 18px;
     font-weight: 700;
+    width: 30%;
+    
 }
 
 #delivery_mthd_card{
@@ -930,4 +939,8 @@ body{
 
 #checkout_form_left{
     width: 600px;
+}
+
+#product_colorlabel{
+    width: 40px;
 }

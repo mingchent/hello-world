@@ -17,8 +17,7 @@
         <div class="product_nav__navigation">
          <div class="nav_logoandsearch">
             <div class="nav_logo_pic">
-            <img class="nav_logo" 
-            src="pics/greenlogo.svg" class="logo"> 
+            <a href="home.html"><img class="nav_logo" src="pics/greenlogo.svg" class="logo"> </a>
             </div>
         <form class="nav_searchbar" action="#">
             <input class="nav_searchbar_bar" type="text" >
@@ -76,12 +75,12 @@
         <div>
         <label>
             <input type="radio" name="test" value="small" checked onclick="changeScr(1)">
-            <img src="pics/color_grey.svg" alt="Option 1">
+            <img id="product_colorlabel" src="pics/color_grey.png" alt="Option 1">
           </label>
           
           <label>
             <input type="radio" name="test" value="big" onclick="changeScr(0)">
-            <img src="pics/color_brown.svg" alt="Option 2">
+            <img id="product_colorlabel" src="pics/color_brown.png" alt="Option 2">
           </label>
         </div>
         </div>
@@ -92,7 +91,7 @@
             <input class="quantity_input" id="quantity" type="text" value="1">
             <span class="up" onClick='increaseCount(event, this)'>+</span>
         </div>
-        <img class="paymentmethods" src="pics/paymentmethods.svg">
+        <img class="paymentmethods" src="pics/paymentmethods.png">
         <div class="checkout_btn">
             <button class="addtocart" onclick="addToCart()" style="cursor: pointer;"></button>
             <a href="cart.html"><button class="checkout" style="cursor: pointer;">Instant Checkout</button></a>

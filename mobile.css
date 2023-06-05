@@ -10,7 +10,7 @@
     }
 
     .nav__navigation{
-        padding: 80px 20px 40px 20px;
+        padding: 20px 20px 40px 20px;
         width: calc(100% - 40px);
         background-image: url(pics/Banner_mobile.svg);
         background-size: 80%;
@@ -44,7 +44,7 @@
     .category{
         margin-top: -100px;
         flex-wrap: wrap;
-        height: 280px;
+        height: 220px;
         align-content: center;
         border-radius: 80px 0px 0px 80px;
     }
@@ -73,7 +73,7 @@
     }
 
     .home_recommend{
-        margin-top: 190px;
+        margin-top: 120px;
         padding: 20px;
     }
 
@@ -114,7 +114,7 @@
     }
 
     .search_nav__navigation, .product_nav__navigation{
-        padding: 80px 40px 40px 40px;
+        padding: 20px 40px 40px 40px;
     }
 
     .product_info{
@@ -184,6 +184,7 @@
 
     .cart_discountbtn{
         width: 20vw;
+        margin-top: 5px;
     }
 
     #cart_enterdiscount{
@@ -235,7 +236,7 @@
     }
 
     .Checkout_input{
-        width: 85vw;
+        width: 80vw;
     }
 
     .confirm_nav__navigation{
@@ -282,6 +283,19 @@
 
     #checkout_formright{
         width:90%;
+    }
+
+    .paymentmethods{
+        margin-top: 20px;
+        width: 60vw;
+    }
+
+    #checkout_form_left{
+        width: 100%;
+    }
+
+    .checkout_title{
+        width: fit-content;
     }
 }
 
