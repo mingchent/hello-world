@@ -111,7 +111,8 @@ h1{
 }
 
 .home_pic{
-    width: 100%;
+    height: auto;
+    width: inherit;
 }
 
 .category{
@@ -119,7 +120,7 @@ h1{
     height: 391px;;
     margin-top: -200px;
     position: absolute;
-    width: 99%;
+    width: 100%;
     border-radius: 100px 0px 0px 100px;
     display: flex;
     align-items: center;
@@ -421,7 +422,7 @@ h2, .price{
     border-radius: 30px;
     width: fit-content;
     height: 15px;
-    padding: 5px 15px 15px 15px;
+    padding: 10px 15px 10px 15px;
     font-family: "Iowan Old style";
     cursor: pointer;
     align-items: center;
@@ -474,6 +475,7 @@ h2, .price{
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
+    align-items: baseline;
 }
 
 hr{
@@ -583,6 +585,7 @@ main{
     background-color: #3B4E42;
     font-family: "Iowan Old Style";
     color: white;
+    padding: 6px 1px 8px 1px;
 }
 
 #discount{
@@ -601,14 +604,22 @@ main{
 #standardshipping{
     width: 10px;
     height: 10px;
-    opacity:unset;
+    opacity: unset;
     position: relative;
     margin-left: 20px;
-    background-color: #3B4E42;
+    border: 2px solid #3B4E42;
+    appearance: none;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border: 6px solid #3B4E42;
+    margin-right: 8px;
 }
 
 .shippingrate{
     margin: 20px 0px 20px 0px;
+    display: flex;
 }
 
 #details_content{
@@ -628,7 +639,7 @@ main{
 
 .cart_checkoutbtn{
     width: 100%;
-    height: 42px;
+    height: 45px;
     border-radius: 30px;
     border-style: none;
     background-color: #3B4E42;
@@ -780,3 +791,66 @@ p {
 body{
     margin: 0;
 }
+
+.confirm_nav__navigation{
+    width: calc(100% - 80px);
+    height: 400px;
+    padding: 40px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background-image: url(pics/confirmation_bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 10% 75%;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.confirm_main{
+    padding: 70px;
+    background-color: #ffffff;
+    border-radius: 100px 100px 0px 0px;
+    margin-top: -90px;
+}
+
+#confirm_text{
+    text-align: center;
+    font-family: "Iowan Old Style";
+    color: #504B48;
+}
+
+#confirm_orderno{
+    text-align: center;
+    font-family: "Iowan Old Style";
+    color: #404040;
+    font-weight: bold;
+}
+
+#myInput{
+    border: none;
+    text-align: center;
+    font-family: "Iowan Old Style";
+    color: #404040;
+    font-weight: bold;
+    font-size: 16px;
+    width: 120px
+}
+
+#content_copy{
+    border: none;
+    background-color: transparent;
+}
+
+.confirm_returnbtn{
+    margin-top: 110px;
+    width: 900px;
+    height: 48px;
+    border-radius: 30px;
+    border-style: none;
+    background-color: #3B4E42;
+    font-family: "Iowan Old Style";
+    color: white;
+    font-size: 17px;
+}
+

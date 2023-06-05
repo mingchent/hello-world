@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="html" href="home.html">
+    <script src="aprilandoak.js"></script>
+</head>
+
+<body>
+    <header>
+        
+        <div class="confirm_nav__navigation">
+            <div class="nav_logo_pic">
+            <img class="nav_logo" 
+            src="pics/logo.png" class="logo"> 
+            </div>
+        <form class="nav_searchbar" action="action_page.php">
+            <input class="nav_searchbar_bar" type="text" >
+            <button class="nav_searchbar_button" type="submit"></button>
+        </form>
+        <div class="nav_acntandcart" style="margin-top: 10px;">
+            <a class="btn_logo" href="#"><img src="pics/account.svg" alt=""></a>
+            <a  class="btn_logo" href="#"><img src="pics/cart.svg" alt=""></a>
+        </div>
+        </div>
+       
+        
+        </header>
+        <main class="confirm_main" >
+            <div style="width: 900px;">
+            <p id="confirm_text">Thanks for ordering at April and Oak, this is a confirmation message that you 
+                have<br> successfully placed an order. We hope you enjoy the products and the experience. </p>
+            <div style="margin-top: 60px; display: flex;flex-direction: column;align-items: center;">
+            <p id="confirm_orderno">Order no.</p>
+            <div>
+            <input type="text" value="536489777777" id="myInput">
+            <button onclick="myFunction()" id="content_copy"><img src="pics/content-copy.svg"  alt="content-copy"></button>
+            </div>
+            </div>
+            <a href="home.html" ><button class="confirm_returnbtn" type="submit">Go back to home page </button></a>
+
+            </div>
+
+        </main>
+</body>
